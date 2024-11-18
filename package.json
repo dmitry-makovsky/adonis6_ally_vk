@@ -1,0 +1,53 @@
+{
+	"name": "adonis6_ally_vk",
+	"description": "AdonisJS 6 Ally Vk Driver",
+	"version": "1.0.0",
+	"main": "build/index.js",
+	"type": "module",
+	"files": ["build/index.js", "build/index.d.ts", "build/src"],
+	"scripts": {
+		"lint": "eslint . --ext=.ts",
+		"format": "prettier --write .",
+		"typecheck": "tsc --noEmit",
+		"pretest": "npm run lint",
+		"build": "tsc"
+	},
+	"devDependencies": {
+		"@adonisjs/ally": "^5.0.0-7",
+		"@adonisjs/core": "^6.1.5-32",
+		"@adonisjs/eslint-config": "^1.3.0",
+		"@adonisjs/prettier-config": "^1.3.0",
+		"@adonisjs/tsconfig": "^1.3.0",
+		"@swc/core": "^1.6.3",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.5"
+	},
+	"peerDependencies": {
+		"@adonisjs/ally": "^5.0.0-7",
+		"@adonisjs/core": "^6.1.5-32"
+	},
+	"author": "Dmitry Makovsky <dima@makovsky.me>",
+	"license": "MIT",
+	"homepage": "https://github.com/dmitry-makovsky/adonis6_ally_vk#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dmitry-makovsky/adonis6_ally_vk.git"
+	},
+	"keywords": [
+		"social-auth",
+		"adonisjs-ally",
+		"adonisjs",
+		"ally",
+		"vk",
+		"vk-auth",
+		"vkontakte",
+		"vk.com",
+		"vkontakte.ru",
+		"adonis6"
+	],
+	"types": "build/index.d.ts",
+	"eslintConfig": {
+		"extends": "@adonisjs/eslint-config/package"
+	},
+	"prettier": "@adonisjs/prettier-config"
+}
