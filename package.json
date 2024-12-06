@@ -1,7 +1,7 @@
 {
 	"name": "adonis6_ally_vk",
 	"description": "AdonisJS 6 Ally Vk Driver",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"main": "index.js",
 	"type": "module",
 	"files": [
