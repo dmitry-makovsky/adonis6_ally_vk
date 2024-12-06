@@ -16,6 +16,6 @@ export async function configure(command: Configure) {
       VK_CLIENT_ID: 'Env.schema.string()',
       VK_CLIENT_SECRET: 'Env.schema.string()',
     },
-    leadingComment: 'Variables for @dmitry-makovsky/adonis6_ally_vk',
+    leadingComment: 'Variables for adonis6_ally_vk',
   })
 }
