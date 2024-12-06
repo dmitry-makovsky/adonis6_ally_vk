@@ -1,10 +1,3 @@
-/**
- * @dmitry-makovsky/adonis6_ally_vk
- *
- * @license MIT
- * @copyright Makovsky Dmitry <dima@makovsky.me>
- */
-
 import type Configure from '@adonisjs/core/commands/configure'
 
 /**
