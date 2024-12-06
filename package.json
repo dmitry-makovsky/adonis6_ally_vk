@@ -1,10 +1,22 @@
 {
 	"name": "adonis6_ally_vk",
 	"description": "AdonisJS 6 Ally Vk Driver",
-	"version": "1.0.2",
-	"main": "build/index.js",
+	"version": "1.0.3",
+	"main": "index.js",
 	"type": "module",
-	"files": ["build/index.js", "build/index.d.ts", "build/src"],
+	"files": [
+		"src",
+		"build/src",
+		"build/stubs",
+		"build/index.js", 
+		"build/index.d.ts",
+		"build/configure.js",
+		"build/configure.d.ts"
+	],
+	"exports": {
+    ".": "./build/index.js",
+    "./types": "./build/src/types.js"
+  },
 	"scripts": {
 		"lint": "eslint . --ext=.ts",
 		"format": "prettier --write .",
