@@ -16,17 +16,17 @@ Please note that port 80 should be used for your Adonis app, as VK only allows o
 Install the package from your command line.
 
 ```bash
-npm i adonis6-ally-vk
+npm i adonis6_ally_vk
 ```
 or
 ```bash
-yarn add adonis6-ally-vk
+yarn add adonis6_ally_vk
 ```
 
 ### 2. Configure the package
 
-```
-node ace add adonis6-ally-vk
+```bash
+node ace add adonis6_ally_vk
 ```
 
 ### 3. Add the provider to allyConfig in your `./config/ally.ts` file
