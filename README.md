@@ -4,6 +4,13 @@ A Vk.com (Vkontakte.ru) driver for [AdonisJS Ally](https://docs.adonisjs.com/gui
 
 ## Getting started
 
+### ⚠️ Important note 
+
+Please note that port 80 should be used for your Adonis app, as VK only allows oAuth redirects to port 80.
+
+
+## Installation
+
 ### 1. Install the package
 
 Install the package from your command line.
@@ -16,22 +23,13 @@ or
 yarn add adonis6-ally-vk
 ```
 
-### 2. Add ENV variables to your `./start/env.ts` file for validation
+### 2. Configure the package
 
-```typescript
-...
-  VK_CLIENT_ID: Env.schema.string(),
-  VK_CLIENT_SECRET: Env.schema.string(),
+```
+node ace add adonis6-ally-vk
 ```
 
-### 3. Add ENV variables to your `.env` file, and optionally to your `.env.example` file
-
-```bash
-VK_CLIENT_ID=your_client_id
-VK_CLIENT_SECRET=your_client_secret
-```
-
-### 4. Add the provider to allyConfig in your `./config/ally.ts` file
+## 3. Add the provider to allyConfig in your `./config/ally.ts` file
 
 ```typescript
 import { VkDriverService } from 'adonis6_ally_vk'
@@ -72,3 +70,23 @@ const allyConfig = defineConfig({
 ```
 
 
+## Manual configuration
+
+If you don't want to configure the driver automatically:
+
+### 1. Add ENV variables to your `./start/env.ts` file for validation
+
+```typescript
+...
+  VK_CLIENT_ID: Env.schema.string(),
+  VK_CLIENT_SECRET: Env.schema.string(),
+```
+
+### 2. Add ENV variables to your `.env` file, and optionally to your `.env.example` file
+
+```bash
+VK_CLIENT_ID=your_client_id
+VK_CLIENT_SECRET=your_client_secret
+```
+
+And after that, add the provider to allyConfig as indicated in step 3 of the automatic configuration above
