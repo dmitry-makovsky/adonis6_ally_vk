@@ -29,7 +29,7 @@ yarn add adonis6-ally-vk
 node ace add adonis6-ally-vk
 ```
 
-## 3. Add the provider to allyConfig in your `./config/ally.ts` file
+### 3. Add the provider to allyConfig in your `./config/ally.ts` file
 
 ```typescript
 import { VkDriverService } from 'adonis6_ally_vk'
